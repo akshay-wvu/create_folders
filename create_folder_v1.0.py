@@ -17,7 +17,9 @@ import os
 today = datetime.now()
 
 # create a directory or folder in Linux's "Documents" folder with today's date as its name
-os.mkdir("/home/aki/Documents/" + today.strftime('%Y%m%d'))
-os.mkdir("/home/aki/Documents/" + today.strftime('%Y%m%d') + '/' + 'folder_1')                                    # change folder name
-os.mkdir("/home/aki/Documents/" + today.strftime('%Y%m%d') + '/' + 'folder_1' + '/' + 'folder_1_subfolder_1')     # change subfolder name
-os.mkdir("/home/aki/Documents/" + today.strftime('%Y%m%d') + '/' + 'folder_1' + '/' + 'folder_1_subfolder_2')     # change subfolder name
+user_name = 'YOUR_LOGIN_USERNAME'
+
+os.mkdir("/home/user_name/Documents/" + today.strftime('%Y%m%d'))
+os.mkdir("/home/user_name/Documents/" + today.strftime('%Y%m%d') + '/' + 'folder_1')                                    # change folder name
+os.mkdir("/home/user_name/Documents/" + today.strftime('%Y%m%d') + '/' + 'folder_1' + '/' + 'folder_1_subfolder_1')     # change subfolder name
+os.mkdir("/home/user_name/Documents/" + today.strftime('%Y%m%d') + '/' + 'folder_1' + '/' + 'folder_1_subfolder_2')     # change subfolder name
